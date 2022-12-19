@@ -1,68 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-}
-
-.wrapper{
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/intro-bg.jpg);
-    position: fixed;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style-type: none;
-}
-
-.sidebar{
-    position: fixed;
-    left: 0;
-    top: 0;
-    min-width: 235px;
-    height: 100%;
-    background: #111418;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    color: white !important;
-}
-
-.sidebar a h5{
     color: white;
 }
 
-.me img{
-    border: 8px solid #2a2e33;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-.home{
+.side_bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    background-color: #111418;
+}
+
+.profile_img {
+    border: 8px solid #343a40;
+}
+
+.text-5 {
+    font-size: 21px !important;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    padding: 16px 0;
+}
+
+.menu ul li {
+    padding: 12px 0;
+}
+
+.icons {
+    margin: 0 0 5px 5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.icons li {
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.icons li a i {
+    color: #aab1b8;
+}
+
+#content{
+    width: 1340px;
+    height: 100vh;
+    float: right;
+}
+
+.hero-wrap {
+    width: 1330px;
+    height: 100vh;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-mask {
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    background-color: #111418;
+    opacity: 0.8;
 }
 
-.perde{
-    width: 100%;
-    height: 100%;
+.hero-bg {
+    width: 1340px;
+    height: 100vh;
+    background-image: url(../img/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
     position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0 ,0);
-    opacity: 0.8;
+    z-index: -1;
+}
+
+.text{
+    width: 100%;
+    height: 300px;
+}
+
+.text h3{
+    color: white !important;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: #212529 !important;
+    position: relative;
+    padding: 4.5rem 0;
+    overflow: hidden;
+    color: #282D31;
+    font-size: 125px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.head{
+    width: 100%;
+    height: 171px;
+    position: absolute;
+    color: white;
+}
+
+@media (max-width: 992px) {
+
+    .side_bar {
+        width: 100%;
+        height: 66px;
+        padding: 0;
+    }
+
+    .logo h1 {
+        margin-top: 20px;
+    }
 }
