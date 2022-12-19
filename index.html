@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap -->
     <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- css -->
@@ -16,59 +18,103 @@
 
 <body>
 
-    <div class="wrapper d-flex">
+    <div class="main">
 
-        <div class="sidebar col-2 px-3 pt-3 pb-2">
+        <nav class="side_bar p-0 navbar navbar-expand-lg navbar-dark border-bottom-0">
 
-            <a class="me text-center mt-4">
+            <div class="container-fluid position-relative h-100 flex-lg-column ps-3 px-lg-3 pt-lg-3 pb-lg-2">
 
-                <img width="160" height="160" class="rounded-pill" src="img/profile.jpg" alt="#">
-                <h5 class="mt-2">Simone Olivia</h5>
+                <a href="index.html" class="logo mb-lg-auto mt-lg-4">
 
-            </a>
+                    <span class="profile_img bg-dark-2 rounded-pill mb-lg-1 d-none d-lg-inline-block">
 
-            <div class="menu">
+                        <img class="img-fluid rounded-pill d-block" src="img/profile.jpg" title="I' Simone" alt="#">
 
-                <ul class="text-center">
-                    <li class="my-3">Home</li>
-                    <li class="my-3">About Me</li>
-                    <li class="my-3">What I do</li>
-                    <li class="my-3">Resume</li>
-                    <li class="my-3">Portfolio</li>
-                    <li class="my-3">Testimonial</li>
-                    <li class="my-3">Contact</li>
+                    </span>
+
+                    <h1 class="text-5 text-white text-center mb-0 d-lg-block">
+
+                        Simone Olivia
+
+                    </h1>
+
+                </a>
+
+                <div class="menu collapse navbar-collapse w-100 flex-column my-lg-auto">
+
+                    <ul class="navbar-nav text-lg-center w-100 my-lg-auto py-lg-3 flex-column">
+
+                        <li class="nav-item"><a href="#home">Home</a></li>
+                        <li class="nav-item"><a href="#about">About Me</a></li>
+                        <li class="nav-item"><a href="">What I Do</a></li>
+                        <li class="nav-item"><a href="">Resume</a></li>
+                        <li class="nav-item"><a href="">Portfolio</a></li>
+                        <li class="nav-item"><a href="">Testimonial</a></li>
+                        <li class="nav-item"><a href="">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <ul
+                    class="icons w-100 social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex justify-content-center align-items-center">
+
+                    <li class="social-icons-facebook"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-icons-twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="social-icons-dribbble"><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
+                    <li class="social-icons-github"><a href=""><i class="fa-brands fa-github"></i></a></li>
+
                 </ul>
 
             </div>
 
-            <div class="smm">
+        </nav>
 
-                <ul class="d-flex justify-content-center align-items-center">
-                    <li class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    <li class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                    <li class="mx-2"><i class="fa fa-dribbble" aria-hidden="true"></i></li>
-                    <li class="mx-2"><i class="fa fa-github" aria-hidden="true"></i></li>
-                </ul>
+        <div id="content">
 
-            </div>
+            <section id="home">
+
+                <div class="hero-wrap">
+
+                    <div class="hero-mask"></div>
+                    <div class="hero-bg">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text">
+
+                                        <!-- <h3>Welcome</h3>
+
+                                        <p>based in Los Angeles, California</p> -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
 
 
 
-        </div>
+                </div>
 
-        <div class="main col-10 ms-auto">
+            </section>
 
-            <div class="home">
+            <section id="about" class="section bg-dark-1">
 
-                <div class="perde"></div>
+                ABOUT ME
+                
+                <div class="head">
 
-            </div>
+                    <h2>Know Me More</h2>
+
+                </div>
+                
+
+            </section>
 
         </div>
 
     </div>
-
-
 
 </body>
 
